@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Us</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-500">MyWebsite</div>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="text-gray-700 hover:text-blue-500">Home</a></li>
+        <li><a href="about.html" class="text-gray-700 hover:text-blue-500">About Us</a></li>
+        <li><a href="service.html" class="text-gray-700 hover:text-blue-500">Services</a></li>
+        <li><a href="/contact.html" class="text-gray-700 hover:text-blue-500">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Hero Section -->
+  <section class="bg-blue-500 text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+      <p class="text-lg mb-8">Get in touch with us for any inquiries or assistance.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">We’d love to hear from you!</h2>
+        
+        <form action="#" method="POST" class="space-y-6">
+          <!-- Name Field -->
+          <div>
+            <label for="name" class="block text-gray-700 font-semibold">Full Name</label>
+            <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Your Name" required>
+          </div>
+          
+          <!-- Email Field -->
+          <div>
+            <label for="email" class="block text-gray-700 font-semibold">Email Address</label>
+            <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Your Email" required>
+          </div>
+
+          <!-- Phone Field -->
+          <div>
+            <label for="phone" class="block text-gray-700 font-semibold">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Your Phone Number" required>
+          </div>
+
+          <!-- Message Field -->
+          <div>
+            <label for="message" class="block text-gray-700 font-semibold">Message</label>
+            <textarea id="message" name="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Your Message" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button type="submit" class="w-full bg-blue-500 text-white p-3 rounded-md font-bold hover:bg-blue-600">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info Section -->
+  <section class="bg-gray-100 py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8">Our Contact Information</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Phone -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="mb-4">
+            <svg class="w-12 h-12 text-blue-500 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 8v8a1 1 0 001 1h2a1 1 0 001 1h14a1 1 0 001-1V7a1 1 0 00-1-1H6a1 1 0 00-1-1H3a1 1 0 00-1 1v8zm16-6v2M6 2v2M3 9h18M9 18h6"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Phone</h3>
+          <p class="text-gray-600">+1 (234) 567-8901</p>
+        </div>
+        <!-- Email -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="mb-4">
+            <svg class="w-12 h-12 text-blue-500 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 8l7.5 5L18 8V6L12 10 3 6v2zm0 10v2h18v-2"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Email</h3>
+          <p class="text-gray-600">support@mywebsite.com</p>
+        </div>
+        <!-- Address -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="mb-4">
+            <svg class="w-12 h-12 text-blue-500 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 10.5a2 2 0 100-4 2 2 0 000 4zm0 0V16m6-2v4a1 1 0 01-1 1H7a1 1 0 01-1-1v-4"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Address</h3>
+          <p class="text-gray-600">123 Main Street, City, Country</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="hover:text-blue-400">Privacy Policy</a>
+        <a href="#" class="hover:text-blue-400">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
